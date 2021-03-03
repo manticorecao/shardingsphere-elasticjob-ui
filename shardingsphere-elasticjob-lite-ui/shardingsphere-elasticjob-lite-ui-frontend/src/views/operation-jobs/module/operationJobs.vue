@@ -75,12 +75,12 @@
                 plain
                 @click="handleDetail(scope.row)">{{ $t("operationJobs.actionText.detail") }}</el-button>
               <el-button
-                v-if="'OK'===scope.row.status"
+                v-if="'CRASHED'!==scope.row.status"
                 :disabled="isGuest"
                 size="mini"
                 type="success"
                 plain
-                @click="handleTrigger(scope.row)">{{ $t("operationJobs.actionText.trigger") }}</el-button>
+                @click="handleTrigger(scope.row)">{{ $t("opera[]tionJobs.actionText.trigger") }}</el-button>
               <el-button
                 v-if="'DISABLED'===scope.row.status"
                 :disabled="isGuest"

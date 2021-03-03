@@ -3,6 +3,12 @@
 ## How to Build
 
 ```bash
+
+npm cache clean --force
+# delete node_modules folder
+# delete package-lock.json file
+npm install
+
 # install dependencies
 npm install
 
